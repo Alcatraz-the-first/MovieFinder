@@ -4,10 +4,10 @@ import { useQuery } from 'react-query'
 
 
 const movie_search = (m_name) => {
-  return fetch(`http://www.omdbapi.com/?s=${m_name}&apikey=4cfd5522`).then(res => res.json())
+  return fetch(`https://www.omdbapi.com/?s=${m_name}&apikey=4cfd5522`).then(res => res.json())
 }
 const movie_find_id = (m_id) => {
-  return fetch(`http://www.omdbapi.com/?i=${m_id}&apikey=4cfd5522`).then(res => res.json())
+  return fetch(`https://www.omdbapi.com/?i=${m_id}&apikey=4cfd5522`).then(res => res.json())
 }
 
 function App() {
